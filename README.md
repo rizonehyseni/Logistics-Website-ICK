@@ -10,8 +10,8 @@ The website provides a clean and responsive interface to manage shipping service
 
 Developed by:
 
-Rizonë Hyseni
-Arban Nerjovaj
+Rizonë Hyseni,
+Arban Nerjovaj,
 Lir Kunushevci
 
 Supervised and supported as part of the Innovation Centre Kosovo (ICK) front-end development program.

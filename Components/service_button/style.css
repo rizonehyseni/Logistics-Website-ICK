@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+}
+.service_button{
+    height: 50px;
+    width:400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.service_button svg{
+    height:20px;
+    width:20px;
+}
+.service_button p{
+    font-weight: bold;
+    font-size: 22px;
+}
+.service_button:hover{
+    cursor:pointer
+}

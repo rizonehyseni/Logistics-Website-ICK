@@ -6,7 +6,7 @@
 }
 .service_button{
     height: 50px;
-    width:400px;
+    /*width:400px;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,9 +17,11 @@
     height:20px;
     width:20px;
 }
-.service_button p{
+.service_button a{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 21px;
+    color:black;
+    text-decoration: none;
 }
 .service_button:hover{
     cursor:pointer

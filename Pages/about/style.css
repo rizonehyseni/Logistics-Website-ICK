@@ -36,7 +36,6 @@ html{
 }
 .cargoVideo{
     display: flex;
-    flex-shrink: 10;
     justify-content: center;
     padding: 30px 30px 0 30px;
     height: auto;
@@ -49,8 +48,11 @@ html{
 }
 .whyUsTitle{
     font-size: 28px;
-    padding: 150px 0 30px 150px;
+    padding: 160px 0 20px 160px;
     width: 55%;
+}
+.tools{
+    padding-block: 80px;
 }
 .wrapper{
     padding: 25px;
@@ -62,24 +64,59 @@ html{
 .box1{
     width: 300px;
     height: 300px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .box2{
     width: 300px;
     height: 300px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .box3{
     width: 300px;
     height: 300px;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .seperator{
     padding: 25px;
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
+}
+.worldwideLocations{
+    background-color: #004cc7;
+    color: white;
+}
+.worldContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 100px;
+    overflow: hidden;
+}
+.worldContainer .worldImg{
+    width: 100%;
+    height: auto;
+}
+.reports{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.reportBox{
+    width: 300px;
+    height: 300px;
+    background-color: red;
 }
 
 @media (max-width: 768px){

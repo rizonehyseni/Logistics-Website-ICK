@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.help_card_container{
+    height: 100px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    padding: 7px;
+    /* transition: box-shadow 0.3s ease; */
+}
+.help_card_container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.help_card_option{
+    /* width: 300px; */
+    /* height: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.help_card_container p{
+    line-height: 1.4;
+    font-size: 12px;
+    opacity: 0.5;
+    padding-right: 20px;
+}
+.help_card_option svg{
+    height: 15px;
+    width: 15px;
+    transform: translateY(2px);
+}
+.help_card_option h4{
+    font-size: 16px;
+}   

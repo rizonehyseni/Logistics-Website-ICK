@@ -37,11 +37,66 @@ button a {
 
 }
 
+.cta-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  transition: .2s ease;
+}
+
+@media (max-width: 768px) {
+  .h1_paragraph_footer {
+    font-size: 1.6rem;
+  }
+
+  .cta-btn {
+    padding: 0.75rem 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1_paragraph_footer {
+    font-size: 1.35rem;
+    min-width: 300px;
+    text-align: center;
+
+  }
+
+  .upper-footer {
+    padding: 2rem 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.8rem;
+
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .bottom-footer p {
+    margin-top: 5px;
+    text-align: center;
+
+  }
+
+  .links-container {
+    grid-template-columns: 1fr;
+    /* 1 column */
+    text-align: center;
+    /* optional */
+  }
+}
+
+
 .h1_paragraph_footer {
-
-  width: 30%;
+  width: 40%;
   overflow: hidden;
-
 }
 
 .links-container {
@@ -50,12 +105,40 @@ button a {
   gap: 30px;
   padding: 50px;
   align-items: start;
-
   height: 100%;
   justify-content: center;
   padding-top: 6em;
+}
 
+.logo-section {
+  display: flex;
+  flex-direction: column;
 
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  color: rgb(58, 57, 57);
+  font-size: 1.3rem;
+  width: 40px;
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: white;
+  background: #3b82f6;
+  transform: translateY(-3px);
 }
 
 /* On tablets or medium screens */
@@ -68,13 +151,10 @@ button a {
 
 }
 
-/* On mobile phones */
 @media (max-width: 480px) {
   .links-container {
     grid-template-columns: 1fr;
-    /* 1 column */
     text-align: center;
-    /* optional */
   }
 }
 
@@ -86,7 +166,13 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: rgb(66, 66, 66);
+  color: rgb(101, 101, 101);
+  transition: 0.2s ease;
+}
+
+ul li a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(150, 149, 149);
 
 }
 
@@ -99,6 +185,7 @@ h3 {
   height: 3em;
   border-top: 1px rgb(174, 174, 174) solid;
   display: flex;
+  justify-content: center;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;

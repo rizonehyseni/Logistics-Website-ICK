@@ -87,9 +87,8 @@ button a {
 
   .links-container {
     grid-template-columns: 1fr;
-    /* 1 column */
     text-align: center;
-    /* optional */
+
   }
 }
 

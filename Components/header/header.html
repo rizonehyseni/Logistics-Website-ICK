@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation bar</title>
   <link rel="stylesheet" href="header.css">
+  <script src="/Components/footer/footer.js"></script>
 
 </head>
 
@@ -14,7 +15,7 @@
   <header>
     <nav id="navbar">
       <div>
-        <img src="/Assets/images/logo.png" width="150px" alt="">
+        <a href="/Pages/home/index.html"><img src="/Assets/images/logo.png" width="150px" alt=""></a>
       </div>
 
 
@@ -32,113 +33,40 @@
       </div>
     </nav>
   </header>
-
-
-  <section class="hero">
-    <div class="hero-text hero-left">RKS Logistics - Support your business with logistics</div>
-    <!-- <div class="hero-text hero-right">Fast and reliable. Only with RKS Logistics. Experience seamless transport and
-      logistics solutions that you can trust. We deliver on time, every time, with full tracking, personalized service,
-      and expert support for all your shipping needs.</div> -->
-  </section>
-
-  <!-- Section per number counter animation -->
-  <section class="counters">
-    <div class="wrapper">
-      <div class="container">
-        <span class="num" data-val="850">000</span>
-        <hr class="divider">
-        <span class="text">People working at RKS Logistics</span>
-      </div>
-      <div class="container">
-        <span class="num" data-val="700">000</span>
-        <hr class="divider">
-        <span class="text">Parcels delivered each year</span>
-      </div>
-      <div class="container">
-        <span class="num" data-val="409">000</span>
-        <hr class="divider">
-        <span class="text">Territories served</span>
-      </div>
-      <div class="container">
-        <span class="num" data-val="356">000</span>
-        <hr class="divider">
-        <span class="text">Happy Clients</span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section3">
-    <div class="section3-left">
-      <h1 class="section3-title">We are the digital logistics company for Kosovo</h1>
-    </div>
-
-    <div class="section3-images">
-      <img src="https://picsum.photos/600/400?random=1" alt="Logistics image 1">
-      <img src="https://picsum.photos/600/400?random=2" alt="Logistics image 2">
-    </div>
-
-
-    <div class="section3-right section3-text">
-      <p>We want to lead the way towards sustainable DIGITAL logistics – we strive to run efficient operations by being
-        a highly trusted company and partner that protect the environment, provide an ideal place to work for all.</p>
-
-      <p>With well-working logistics, your business also runs smoother. This goal guides our everyday actions.</p>
-
-      <p>We are a rapidly growing domestic family business, and one of Finland’s largest businesses in the logistics
-        field. We offer customized transportation, forwarding and storage services as well as versatile delivery chain
-        management solutions everywhere in the world.</p>
-
-      <p>Our workdays are filled with new transportations and logistics services, and new opportunities like your
-        commission. We will handle it carefully and on time, together with our trusted partners.</p>
-    </div>
-  </section>
-  </section>
-
-
-
 </body>
 
 <script>
   let lastScroll = 0;
   const navbar = document.getElementById("navbar");
+  const threshold = 50; // hide only after scrolling down 50px
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScroll && currentScroll > 50) {
-      // scrolling down
+    // 1. Scrolling down → hide
+    if (currentScroll > lastScroll && currentScroll > threshold) {
       navbar.classList.add("nav-hidden");
-    } else {
-      // scrolling up
+      navbar.classList.remove("navbar-up");
+    }
+    // 2. Scrolling up → show with new design
+    else if (currentScroll < lastScroll) {
       navbar.classList.remove("nav-hidden");
+      navbar.classList.add("navbar-up");
+    }
+
+    // 3. At the very top → remove new design (back to original)
+    if (currentScroll <= 0) {
+      navbar.classList.remove("navbar-up");
     }
 
     lastScroll = currentScroll;
   });
 
-
-
-  // Per number counter animation
-
-
-  let valueDisplays = document.querySelectorAll(".num");
-  let interval = 2000;
-
-  valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = Math.floor(interval / endValue);
-
-    let counter = setInterval(() => {
-      startValue++;
-      valueDisplay.textContent = startValue;
-      if (startValue === endValue) {
-        clearInterval(counter);
-      }
-    }, duration);
-  });
-
 </script>
+
+
+<my-footer> </my-footer>
+
+
 
 </html>

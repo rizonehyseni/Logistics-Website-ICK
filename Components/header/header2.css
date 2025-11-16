@@ -28,13 +28,19 @@ header nav {
   text-decoration: none;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+nav ul {
+  display: flex;
+  align-items: center;
 }
+
 
 ul li a {
   transition: 0.2s ease-in;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
 }
 
 ul li a:hover {

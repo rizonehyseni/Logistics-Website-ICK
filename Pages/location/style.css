@@ -14,66 +14,156 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .blue-container div {
   color: white;
   font-size: 2.5rem;
   display: flex;
+  gap: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center
 }
 
-.search-box {
-  display: flex;
-  background-color: rgb(125, 18, 18);
-  width: 500px;
-  flex-direction: row;
-  overflow: hidden;
-  border-radius: 5px;
-  justify-content: space-between;
+.blue-container div h2 {
+  max-width: 70vw;
 }
 
-.search-box__input {
+.input-box {
+  padding: 20px;
+  position: relative;
+  height: 70px;
+  width: 40vw;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+
+.input-box input {
   height: 100%;
-  border: none;
-
-}
-
-.search-box__btn {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  color: white;
-  background-color: black;
-  height: 100%;
-}
-
-
-
-/* services card */
-
-.services-card {
-
-
-  width: 20rem;
-  margin-left: 10rem;
-}
-
-.service-crd-text {
-  padding-top: 5px;
-}
-
-.services-card ul {
-  padding: 4px;
-  list-style: disc inside;
-  color: black;
-}
-
-.services-card img {
   width: 100%;
-  height: 40%;
-  object-fit: cover;
-  object-position: center;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  width: 20vh;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+
+
+
+/* <section class="blue-container">
+    <div>
+      <h2>Find RKS Logistics locations in Europe</h2>
+      <div class="search-box">
+        <input type="text" class="search-box__input" placeholder="Find location near">
+        <button type="button" class="search-box__btn">Search</button>
+      </div>
+    </div>
+  </section> */
+
+.near-services-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-header h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 70vw;
+}
+
+.cards-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.location-card {
+  flex: 1 1 300px;
+  max-width: 320px;
 }

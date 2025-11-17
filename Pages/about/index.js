@@ -43,7 +43,7 @@ const testimonials = [
   },
   {
     name: "Mergim Graiqevci",
-    role: "I don't work, I'm a princess",
+    role: "Bo$$",
     content:
       "This is by far the best website I've ever seen. The team did an amazing job here. Well done <b>Arban, Rizona and Lir!!<b>",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
@@ -83,3 +83,23 @@ testimonials.sort(() => Math.random() - 0.5);
 populateColumn("column2");
 testimonials.sort(() => Math.random() - 0.5);
 populateColumn("column3");
+
+const items = document.querySelectorAll(".faqItem");
+
+items.forEach(item => {
+    item.querySelector(".faqQuestion").addEventListener("click", () => {
+
+        const answer = item.querySelector(".faqAnswer");
+        const icon = item.querySelector(".icon");
+
+        items.forEach(i => {
+            if (i !== item) {
+                i.querySelector(".faqAnswer").classList.remove("show");
+                i.querySelector(".icon").textContent = "+";
+            }
+        });
+
+        answer.classList.toggle("show");
+        icon.textContent = answer.classList.contains("show") ? "-" : "+";
+    });
+});

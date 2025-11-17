@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.blue-container {
+  background-color: blue;
+  height: 80vh;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.blue-container div {
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.blue-container div h2 {
+  max-width: 70vw;
+}
+
+.input-box {
+  padding: 20px;
+  position: relative;
+  height: 70px;
+  width: 40vw;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  width: 20vh;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .blue-container h2 {
+    font-size: 1.8rem;
+    min-width: 300px;
+  }
+
+  .blue-container {
+    height: 25rem;
+  }
+
+  .input-box {
+    min-width: 70vw;
+    height: 40px;
+    padding: 0;
+  }
+
+  .input-box i {
+    left: 2px;
+    scale: 0.7;
+    top: 40%;
+  }
+
+  .input-box .button {
+    width: 70px;
+    height: 32px;
+    padding: 0;
+    right: 5px;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+    padding: 0 5rem 0 2.5rem;
+  }
+
+  input::placeholder {
+    font-size: 0.9rem;
+
+  }
+
+
+  .section-header {
+    text-align: center;
+  }
+
+}
+
+/* Responsive */
+/* @media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+} */
+
+
+
+
+/* <section class="blue-container">
+    <div>
+      <h2>Find RKS Logistics locations in Europe</h2>
+      <div class="search-box">
+        <input type="text" class="search-box__input" placeholder="Find location near">
+        <button type="button" class="search-box__btn">Search</button>
+      </div>
+    </div>
+  </section> */
+
+.near-services-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+
+
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  min-width: 24rem;
+  font-size: 1rem;
+}
+
+.cards-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.location-card {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+
+
+
+@media (max-width: 768px) {}

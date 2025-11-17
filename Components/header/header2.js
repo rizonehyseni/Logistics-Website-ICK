@@ -1,0 +1,53 @@
+class HeaderComponent extends HTMLElement {
+  connectedCallback() {
+    this.render()
+  }
+  render() {
+    this.innerHTML = `
+ <link rel="stylesheet" href="/Components/header/header2.css">
+  <header>
+    <nav id="navbar">
+      <div>
+        <a href="/Pages/home/index.html"><img src="/Assets/images/logo.png" width="150px" alt=""></a>
+      </div>
+
+
+      <ul class="nav-links">
+        <li><a href="/Pages/about/index.html">About</a></li>
+        <li><a href="/Pages/services/index.html">Services</a></li>
+        <li><a href="/Pages/location/index.html">Location</a></li>
+        <li><a href="/Pages/our-strengths/">Our Strengths</a></li>
+        <li><a href="/Pages/customer-care/">Customer Care</a></li>
+      </ul>
+
+
+      <div class="right-buttons">
+        <button class="login-btn">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    let lastScroll = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll && currentScroll > 50) {
+        // scrolling down
+        navbar.classList.add("nav-hidden");
+      } else {
+        // scrolling up
+        navbar.classList.remove("nav-hidden");
+      }
+
+      lastScroll = currentScroll;
+    });
+
+
+  </script>
+        `
+  }
+}
+customElements.define('white-header', HeaderComponent) 

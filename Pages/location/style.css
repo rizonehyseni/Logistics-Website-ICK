@@ -83,8 +83,54 @@
   transform: translateY(-50%) scale(0.98);
 }
 
+@media (max-width: 480px) {
+  .blue-container h2 {
+    font-size: 1.8rem;
+    min-width: 300px;
+  }
+
+  .blue-container {
+    height: 25rem;
+  }
+
+  .input-box {
+    min-width: 70vw;
+    height: 40px;
+    padding: 0;
+  }
+
+  .input-box i {
+    left: 2px;
+    scale: 0.7;
+    top: 40%;
+  }
+
+  .input-box .button {
+    width: 70px;
+    height: 32px;
+    padding: 0;
+    right: 5px;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+    padding: 0 5rem 0 2.5rem;
+  }
+
+  input::placeholder {
+    font-size: 0.9rem;
+
+  }
+
+
+  .section-header {
+    text-align: center;
+  }
+
+}
+
 /* Responsive */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .input-box {
     height: 66px;
     margin: 0 8px;
@@ -104,7 +150,7 @@
     font-size: 14px;
     padding: 8px 18px;
   }
-}
+} */
 
 
 
@@ -141,14 +187,17 @@
 }
 
 .section-header h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+
+
 }
 
 .section-header p {
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 70vw;
+  min-width: 24rem;
+  font-size: 1rem;
 }
 
 .cards-container {
@@ -167,3 +216,8 @@
   flex: 1 1 300px;
   max-width: 320px;
 }
+
+
+
+
+@media (max-width: 768px) {}

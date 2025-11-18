@@ -78,7 +78,7 @@ ul li a:hover {
 /* section 1 */
 .hero {
   height: 100vh;
-  background: url('/Assets/images/hero-pic.jpg') no-repeat center bottom/cover;
+  background: url('/Assets/images/trunck.avif') no-repeat center bottom/cover;
   position: relative;
 }
 
@@ -89,25 +89,21 @@ ul li a:hover {
 }
 
 .hero-left {
-  left: 100px;
-  font-size: 4.4rem;
+  left: 80px;
+  font-size: 3.5rem;
   max-width: 800px;
-  /* adjust size */
   word-wrap: break-word;
-  /* forces wrapping */
+  /* per me ba wrapping */
   font-weight: 600;
-  bottom: 100px;
+  bottom: 120px;
 }
 
-.hero-right {
-  font-size: 1.3rem;
-  max-width: 400px;
-  /* adjust size */
-  word-wrap: break-word;
-  /* forces wrapping */
-  right: 120px;
-  bottom: 150px;
+.hero-left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
 }
+
 
 
 /* number counteri */
@@ -119,6 +115,7 @@ ul li a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+
 }
 
 .container {
@@ -138,12 +135,12 @@ ul li a:hover {
 }
 
 .num {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
   color: rgb(79, 79, 79);
 }

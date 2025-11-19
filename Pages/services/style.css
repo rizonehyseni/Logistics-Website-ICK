@@ -32,8 +32,26 @@
     line-height: 1.5;
     opacity:0.9;
 }
+@media (max-width:768px){
+    .title_and_description_container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+    .title_container, 
+    .description_container{
+        width: 100%;
+    }
+    .title_container{
+        font-size: 20px;
+    }
+}
 .services_main_page_container{
-    height: 180vh;
+    height: auto;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -61,9 +79,29 @@
     opacity:0.7;
     line-height: 1.5;
 }
+@media (max-width:768px){
+    .services_main_page_container{
+        padding: 50px 20px;
+    }
+    .services_title_and_description_container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+    .services_title,
+    .services_description{
+        width:100%;
+    }
+    .services_title{
+        font-size: 17px;
+    }
+}
 .services_main_page_container img{
     width:100%;
-    height:90vh;
+    height:auto;
 }
 .service_buttons_container{
     margin-left: auto;
@@ -71,6 +109,13 @@
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+@media (max-width:768px){
+    .service_buttons_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+    }
 }
 .logistics_quote{
     display: flex;
@@ -109,4 +154,25 @@
 }
 .quote_arrows_svg:hover{
     cursor: pointer;
+}
+@media (max-width:768px){
+    .logistics_quote{
+        padding: 50px;
+        height: auto;
+        gap: 30px;
+    }
+    .logistics_quote h1{
+        font-size: 28px;
+    }
+    .logistics_quote_author{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .quote_arrows_svg{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

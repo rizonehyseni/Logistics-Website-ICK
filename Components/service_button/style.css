@@ -16,6 +16,7 @@
 .service_button svg{
     height:20px;
     width:20px;
+    flex-shrink: 0;
 }
 .service_button a{
     font-weight: bold;

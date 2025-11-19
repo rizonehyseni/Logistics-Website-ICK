@@ -6,9 +6,12 @@
 }
 body{
     padding: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
 }
 .customer_care_main_page_container{
-    height: 80vh;
+    height: auto;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -29,6 +32,7 @@ body{
 .contact_lookup_container form{
     display: flex;
     flex-direction: row;
+    width: auto;
 }
 .contact_lookup_container input{
     padding: 10px;
@@ -97,6 +101,62 @@ body{
     align-content: space-between; */
     margin-top: -7px;
 }
+@media (max-width:1064px){
+    .cc_help_options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+@media (max-width:1064px){
+    body{
+        padding: 20px;
+    }
+    .customer_care_main_page_container{
+        gap: 50px;
+    }
+    .cc_main_page_content{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .tracking_section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_lookup_container input{
+        width: 100%;
+        padding-right: 100px;
+    }
+    .alternative_tracking_container{
+        width: 80%;
+    }
+    .contact_lookup_container button{
+        transform: translateX(-74px) translateY(2.5px);
+    }
+}
+@media (max-width: 580px){
+    .contact_lookup_container button{
+        transform: translateX(-68px) translateY(2.5px);
+    }
+    .cc_help_options{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .contact_lookup_container button{
+        transform: translateX(-62px) translateY(2.5px);
+    }
+}
+@media (max-width: 350px){
+    .contact_lookup_container button{
+        transform: translateX(-55px) translateY(2.5px);
+    }
+}
 .documents_and_packages_container{
     display:flex;
     flex-direction: column;
@@ -152,6 +212,7 @@ body{
 .e_commerce_box_info h4,
 .logistics_box_info h4{
     height: 50px;
+    max-lines: 1;
 }
 .e_commerce_box_title_container svg{
     width: 30px;
@@ -167,4 +228,22 @@ info-item:hover{
     cursor: pointer;
     text-decoration: underline;
     color:#0a47c9
+}
+@media (max-width:768px){
+    .documents_and_packages_boxes_container{
+        flex-direction: column;
+    }
+    .e_commerce_box,
+    .logistics_box{
+        width: 100%;
+    }
+}
+@media (max-width:670px){
+    .e_commerce_box{
+        height: 78vh;
+    }
+    .e_commerce_box_info{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

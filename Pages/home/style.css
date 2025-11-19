@@ -116,6 +116,7 @@ Me mshef navbarin
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+  background-color: rgb(225, 225, 225);
 
 }
 
@@ -171,7 +172,7 @@ video {
 
 .cards-container {
   width: 100vw;
-  height: 75vh;
+  height: 85vh;
   background: url(/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -181,7 +182,7 @@ video {
 
 .service-card {
   width: 50vh;
-  height: 100%;
+  height: 80%;
   background-color: rgba(23, 23, 23, 0.5);
   display: flex;
   flex-direction: column;
@@ -227,10 +228,14 @@ video {
   color: black;
 }
 
+
 .translate-effect a {
   text-decoration: none;
-
+  color: white;
 }
+
+
+
 
 
 /* .service-card p:hover,
@@ -238,3 +243,7 @@ video {
  
   color: black;
 } */
+
+
+
+/*SLIDERI*/

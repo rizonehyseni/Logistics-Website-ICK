@@ -4,7 +4,7 @@ class FooterComponent extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-  <link rel="stylesheet" href="/Components/footer/footer.css">
+  <link rel="stylesheet" href="../../Components/footer/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">         
   <footer>
     <div class="upper-footer">
@@ -19,7 +19,7 @@ class FooterComponent extends HTMLElement {
     <div class="lower-footer">
       <div class="links-container">
         <div class="logo-section">
-          <img src="/Assets/images/logo.png" width="200px" alt="Company Logo">
+          <img src="../../Assets/images/logo.png" width="200px" alt="Company Logo">
           <p>RKS Logistics provides customized services for customers around the world form 50+ leading industries</p>
 
         </div>

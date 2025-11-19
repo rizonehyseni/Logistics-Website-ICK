@@ -6,7 +6,7 @@ class HelpCardComponent extends HTMLElement {
         const help_card_option = this.getAttribute('help_card_option')
         const help_card_description = this.getAttribute('help_card_description')
         this.innerHTML = `
-            <link rel="stylesheet" href="../../components/help_card/style.css"/>
+            <link rel="stylesheet" href="../../Components/help_card/style.css"/>
             <div class="help_card_container">
                 <div class="help_card_option">
                     <h4>

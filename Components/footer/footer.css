@@ -66,7 +66,7 @@ button a {
 
 @media (max-width: 480px) {
   .h1_paragraph_footer {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     min-width: 300px;
     text-align: center;
 
@@ -77,9 +77,9 @@ button a {
   }
 
   .cta-btn {
-    width: 100%;
-    padding: 1rem;
-    font-size: 0.8rem;
+    min-width: 70%;
+    font-size: 0.6rem;
+    height: 20%;
 
   }
 

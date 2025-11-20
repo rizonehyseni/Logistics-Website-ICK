@@ -4,24 +4,24 @@ class HeaderComponent extends HTMLElement {
   }
   render() {
     this.innerHTML = `
- <link rel="stylesheet" href="/Components/header/header2.css">
+ <link rel="stylesheet" href="../../Components/header/header2.css">
   <header>
     <nav id="navbar">
       <div>
-        <a href="/Pages/home/index.html"><img src="/Assets/images/logo.png" width="150px" alt=""></a>
+        <a href="../../Pages/home/index.html"><img src="../../Assets/images/logo.png" width="150px" alt=""></a>
       </div>
 
 
       <ul class="nav-links">
-        <li><a href="/Pages/about/index.html">About</a></li>
-        <li><a href="/Pages/services/index.html">Services</a></li>
-        <li><a href="/Pages/location/index.html">Location</a></li>
-        <li><a href="/Pages/customer-care/">Customer Care</a></li>
+        <li><a href="../../Pages/about/index.html">About</a></li>
+        <li><a href="../../Pages/services/index.html">Services</a></li>
+        <li><a href="../../Pages/location/index.html">Location</a></li>
+        <li><a href="../../Pages/customer-care/">Customer Care</a></li>
       </ul>
 
 
       <div class="right-buttons">
-        <button class="login-btn">Login</button>
+        <button class="login-btn"><a href="../../Pages/sign-in-up/login.html">Login</a></button>
       </div>
     </nav>
   </header>

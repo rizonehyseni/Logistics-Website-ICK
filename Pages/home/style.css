@@ -79,8 +79,9 @@ Me mshef navbarin
 /* section 1 */
 .hero {
   height: 100vh;
-  background: url('/Assets/images/trunck.avif') no-repeat center bottom/cover;
+  background: url('/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg') no-repeat center bottom/cover;
   position: relative;
+
 }
 
 .hero-text {
@@ -89,7 +90,7 @@ Me mshef navbarin
 
 }
 
-.hero-left {
+.hero-text {
   left: 80px;
   font-size: 3.5rem;
   max-width: 800px;
@@ -99,20 +100,27 @@ Me mshef navbarin
   bottom: 120px;
 }
 
-.hero-left p {
+.hero-text p {
   font-size: 1.5rem;
   font-weight: 400;
-
 }
 
+/* aboutus section */
+.aboutUsContainer {
+  background-color: red;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
 
+}
 
 /* number counteri */
 .wrapper {
   max-width: 1200px;
   margin: 6rem auto;
   padding: 0 2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
@@ -120,7 +128,7 @@ Me mshef navbarin
 
 }
 
-.container {
+.counter-container {
   width: 30vmin;
   min-width: 180px;
   height: 30vmin;
@@ -173,12 +181,14 @@ video {
 .transparent-cards-container {
   width: 100vw;
   height: 100vh;
-  background: url(/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center center/cover;
-  display: flex;
+  background: url(/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   gap: 1.7rem;
   margin-bottom: 4rem;
+  overflow: hidden;
 }
 
 .service-card {
@@ -236,38 +246,49 @@ video {
 }
 
 
-.more-info-container {
-  display: flex;
+/* .more-info-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
-  justify-content: center;
   margin-bottom: 5rem;
+
 }
 
 .more-info-card {
-  width: 17rem;
-  height: 19rem;
+ height: 19rem;
   background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
+} */
+
+.more-info-container {
+  padding: 20px;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 5rem;
+  padding: 0 20px;
 }
 
+.more-info-card {
+  height: 18rem;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  /* very important if you keep padding */
+}
 
 .more-info-card a {
   text-decoration: none;
 }
 
 
-
-
-
-
-/* .service-card p:hover,
-.service-card h1:hover {
- 
-  color: black;
-} */
 
 
 
@@ -281,8 +302,9 @@ video {
   gap: 10px;
 }
 
-.slider-section-container h3 {
-  width: 20px;
+.slider-section-container hr {
+  width: 150px;
+
 }
 
 .slider {
@@ -296,7 +318,7 @@ video {
   padding: 0;
   margin: 0;
   display: flex;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
   gap: 80px;
 }
 
@@ -331,4 +353,122 @@ video {
 .brands::after {
 
   flex: 0 0 100vw;
+}
+
+
+/* responsive */
+
+@media (max-width: 480px) {
+  .slider-section-container {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .slider {
+    padding: 0;
+  }
+
+  .slider-section-container h2 {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+
+  .slider-section-container hr {
+    width: 90px;
+  }
+
+  .brand-logo svg {
+    width: 130px;
+  }
+
+  /* pjesa e get more info about us  */
+  .more-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .more-info-card {
+    height: 210px;
+  }
+
+  .more-info-card p {
+    font-size: 12px;
+  }
+
+  .more-info-card a {
+    font-size: 12px;
+  }
+
+
+  /* cards */
+  .transparent-cards-container {
+    grid-template-columns: 1fr;
+    height: 145vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+  }
+
+  .service-card {
+    height: 18rem;
+    width: 50px;
+    min-width: 22rem;
+  }
+
+  .service-card h1 {
+    font-size: 30px;
+  }
+
+  .service-card p,
+  .service-card a {
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .wrapper {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.8rem;
+  }
+
+  .counter-container .text {
+    font-size: 12px;
+  }
+
+  .counter-container .num {
+    font-size: 36px;
+  }
+
+  .counter-container hr {
+    width: 70px;
+  }
+
+  /* hero page */
+
+  .hero {
+    height: 80vh;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    left: 20px;
+    min-width: 20rem;
+    max-width: 22rem;
+  }
+
+  .hero-text h4 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
 }

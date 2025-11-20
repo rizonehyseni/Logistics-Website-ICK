@@ -12,7 +12,7 @@ class FooterComponent extends HTMLElement {
         Make sure you choose the right expedition services for your delivery
       </h1>
       <button class="cta-btn">
-        <a href="#">Contact Us</a>
+        <a href="mailto:support@rkslogistics.com">Contact Us</a>
       </button>
     </div>
 

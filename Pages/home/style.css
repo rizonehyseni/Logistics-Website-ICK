@@ -79,7 +79,7 @@ Me mshef navbarin
 /* section 1 */
 .hero {
   height: 100vh;
-  background: url('/Assets/images/trunck.avif') no-repeat center bottom/cover;
+  background: url('../../Assets/images/trunck.avif') no-repeat center bottom/cover;
   position: relative;
 }
 
@@ -173,7 +173,7 @@ video {
 .transparent-cards-container {
   width: 100vw;
   height: 100vh;
-  background: url(/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center center/cover;
+  background: url(../../Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;

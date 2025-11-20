@@ -7,7 +7,7 @@ class CardComponent extends HTMLElement {
     const thirdList = this.getAttribute("third-list")
 
     this.innerHTML = `
-    <link rel="stylesheet" href="/Components/location-cards/location-cards.css">
+    <link rel="stylesheet" href="../../Components/location-cards/location-cards.css">
     <div class="services-card">
         <img src="${image}" alt="">
         <div class="service-crd-text">

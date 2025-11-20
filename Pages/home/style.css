@@ -116,7 +116,7 @@ Me mshef navbarin
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: rgb(225, 225, 225);
+
 
 }
 
@@ -170,25 +170,26 @@ video {
   object-fit: cover;
 }
 
-.cards-container {
+.transparent-cards-container {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   background: url(/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.7rem;
+  margin-bottom: 4rem;
 }
 
 .service-card {
   width: 50vh;
-  height: 80%;
+  height: 85%;
   background-color: rgba(23, 23, 23, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
   transition: 0.5s all ease;
 }
@@ -235,6 +236,30 @@ video {
 }
 
 
+.more-info-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.more-info-card {
+  width: 17rem;
+  height: 19rem;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+
+.more-info-card a {
+  text-decoration: none;
+}
+
+
+
 
 
 
@@ -246,4 +271,64 @@ video {
 
 
 
+
 /*SLIDERI*/
+.slider-section-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-section-container h3 {
+  width: 20px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.brands {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  animation: scroll 10s linear infinite;
+  gap: 80px;
+}
+
+.brand-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo svg {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+
+.brands:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.brands::after {
+
+  flex: 0 0 100vw;
+}

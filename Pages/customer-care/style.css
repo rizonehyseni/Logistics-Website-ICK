@@ -1,40 +1,47 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
-    padding: 90px;
+
+body {
+
     display: flex;
     flex-direction: column;
     gap: 75px;
 }
-.customer_care_main_page_container{
+
+.customer_care_main_page_container {
     height: auto;
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     gap: 75px;
+    padding: 90px;
 }
-.cc_main_page_content{
-    display:flex;
+
+.cc_main_page_content {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 10px;
 }
-.contact_lookup_container{
-    display:flex;
+
+.contact_lookup_container {
+    display: flex;
     flex-direction: column;
     gap: 7px;
     height: 125px;
 }
-.contact_lookup_container form{
+
+.contact_lookup_container form {
     display: flex;
     flex-direction: row;
     width: auto;
 }
-.contact_lookup_container input{
+
+.contact_lookup_container input {
     padding: 10px;
     padding-left: 15px;
     padding-right: 87px;
@@ -45,7 +52,8 @@ body{
     border-style: solid;
     border-width: 1px;
 }
-.contact_lookup_container button{
+
+.contact_lookup_container button {
     width: 80px;
     height: 45px;
     background-color: #0a47c9;
@@ -55,15 +63,18 @@ body{
     cursor: pointer;
     transform: translateX(-82px) translateY(2px);
 }
-.contact_lookup_container p{
+
+.contact_lookup_container p {
     font-size: 11px;
     opacity: 0.5;
 }
-.contact_lookup_container h4{
+
+.contact_lookup_container h4 {
     font-size: 16px;
 }
-.alternative_tracking_container{
-    display:flex;
+
+.alternative_tracking_container {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     border-top: 1px solid lightgrey;
@@ -71,27 +82,32 @@ body{
     height: 50px;
     padding-top: 25px;
 }
-.alternative_tracking_container p{
+
+.alternative_tracking_container p {
     font-size: 12px;
     opacity: 0.5;
 }
-.alternative_tracking_container a{
+
+.alternative_tracking_container a {
     text-decoration: none;
     color: #0a47c9;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
 }
-.alternative_tracking_container a:hover{
+
+.alternative_tracking_container a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.alternative_tracking_container svg{
+
+.alternative_tracking_container svg {
     height: 20px;
     width: 20px;
     transform: translateY(5px);
     padding-left: 5px;
 }
-.cc_help_options{
+
+.cc_help_options {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
@@ -101,148 +117,177 @@ body{
     align-content: space-between; */
     margin-top: -7px;
 }
-@media (max-width:1064px){
-    .cc_help_options{
+
+@media (max-width:1064px) {
+    .cc_help_options {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
     }
 }
-@media (max-width:1064px){
-    body{
+
+@media (max-width:1064px) {
+    body {
         padding: 20px;
     }
-    .customer_care_main_page_container{
+
+    .customer_care_main_page_container {
         gap: 50px;
     }
-    .cc_main_page_content{
+
+    .cc_main_page_content {
         flex-direction: column;
         gap: 100px;
     }
-    .tracking_section{
+
+    .tracking_section {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .contact_lookup_container input{
+
+    .contact_lookup_container input {
         width: 100%;
         padding-right: 100px;
     }
-    .alternative_tracking_container{
+
+    .alternative_tracking_container {
         width: 80%;
     }
-    .contact_lookup_container button{
+
+    .contact_lookup_container button {
         transform: translateX(-74px) translateY(2.5px);
     }
 }
-@media (max-width: 580px){
-    .contact_lookup_container button{
+
+@media (max-width: 580px) {
+    .contact_lookup_container button {
         transform: translateX(-68px) translateY(2.5px);
     }
-    .cc_help_options{
+
+    .cc_help_options {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         width: 100%;
     }
 }
-@media (max-width: 420px){
-    .contact_lookup_container button{
+
+@media (max-width: 420px) {
+    .contact_lookup_container button {
         transform: translateX(-62px) translateY(2.5px);
     }
 }
-@media (max-width: 350px){
-    .contact_lookup_container button{
+
+@media (max-width: 350px) {
+    .contact_lookup_container button {
         transform: translateX(-55px) translateY(2.5px);
     }
 }
-.documents_and_packages_container{
-    display:flex;
+
+.documents_and_packages_container {
+    display: flex;
     flex-direction: column;
     gap: 50px;
     height: 80vh;
+    padding: 90px;
 }
-.documents_and_packages_boxes_container{
+
+.documents_and_packages_boxes_container {
     display: flex;
     flex-direction: row;
 }
+
 .e_commerce_box_info svg,
-.logistics_box_info svg{
+.logistics_box_info svg {
     width: 20px;
     height: 20px;
     transform: translateY(-20px);
 }
+
 .e_commerce_box,
-.logistics_box{
+.logistics_box {
     width: 50%;
     height: 55vh;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 20px;
 }
+
 .e_commerce_box_title_container,
-.logistics_box_title_container{
-    display:flex;
+.logistics_box_title_container {
+    display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center
 }
+
 .e_commerce_box_content,
-.logistics_box_content{
+.logistics_box_content {
     display: flex;
     flex-direction: column;
     gap: 20px;
     height: 40%;
     border-bottom: 1px solid lightgrey;
 }
+
 .e_commerce_box_content p,
-.logistics_box_content p{
+.logistics_box_content p {
     font-size: 14px;
     opacity: 0.5;
 }
-.logistics_box_info{
-    display:flex;
+
+.logistics_box_info {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 70px;
     /* gap:20px; */
 }
+
 .e_commerce_box_info h4,
-.logistics_box_info h4{
+.logistics_box_info h4 {
     height: 50px;
     max-lines: 1;
 }
-.e_commerce_box_title_container svg{
+
+.e_commerce_box_title_container svg {
     width: 30px;
     height: 30px;
 }
-.e_commerce_box_info{
+
+.e_commerce_box_info {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
     gap: 150px;
 }
-info-item:hover{
+
+info-item:hover {
     cursor: pointer;
     text-decoration: underline;
-    color:#0a47c9
+    color: #0a47c9
 }
-@media (max-width:768px){
-    .documents_and_packages_boxes_container{
+
+@media (max-width:768px) {
+    .documents_and_packages_boxes_container {
         flex-direction: column;
     }
+
     .e_commerce_box,
-    .logistics_box{
+    .logistics_box {
         width: 100%;
     }
 }
-@media (max-width:670px){
-    .e_commerce_box{
+
+@media (max-width:670px) {
+    .e_commerce_box {
         height: 78vh;
     }
-    .e_commerce_box_info{
+
+    .e_commerce_box_info {
         flex-direction: column;
         gap: 20px;
     }

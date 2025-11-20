@@ -1,39 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
-.title_and_description_container{
+
+.title_and_description_container {
     min-height: 60vh;
-    width:100%;
+    width: 100%;
     background-color: #0a47c9;
-    display:flex;
+    display: flex;
     flex-direction: row;
     color: white;
     align-items: flex-end;
     justify-content: space-between;
     padding: 75px;
     padding-bottom: 75px;
-    gap:50px;
+    gap: 50px;
     flex-wrap: wrap;
 }
-.title_container{
-    width:55%;
+
+.title_container {
+    width: 55%;
     font-size: 22px;
 }
-.title_container h1{
+
+.title_container h1 {
     line-height: 1.3;
 }
-.description_container{
+
+.description_container {
     width: 25%;
 }
-.description_container p{
+
+.description_container p {
     line-height: 1.5;
-    opacity:0.9;
+    opacity: 0.9;
 }
-@media (max-width:768px){
-    .title_and_description_container{
+
+@media (max-width:768px) {
+    .title_and_description_container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -42,48 +48,56 @@
         gap: 20px;
         padding: 50px 20px;
     }
-    .title_container, 
-    .description_container{
+
+    .title_container,
+    .description_container {
         width: 100%;
     }
-    .title_container{
+
+    .title_container {
         font-size: 20px;
     }
 }
-.services_main_page_container{
+
+.services_main_page_container {
     height: auto;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap:30px;
-    padding:100px 75px;
+    gap: 30px;
+    padding: 100px 75px;
 }
-.services_title_and_description_container{
+
+.services_title_and_description_container {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     height: 17vh;
     justify-content: space-between;
     align-items: flex-end;
     gap: 50px;
 }
-.services_title{
+
+.services_title {
     min-height: 10vh;
     width: 50%;
     font-size: 22px;
     line-height: 1.3;
 }
-.services_description{
-    min-height:10vh;
-    width:50%;
-    opacity:0.7;
+
+.services_description {
+    min-height: 10vh;
+    width: 50%;
+    opacity: 0.7;
     line-height: 1.5;
 }
-@media (max-width:768px){
-    .services_main_page_container{
+
+@media (max-width:768px) {
+    .services_main_page_container {
         padding: 50px 20px;
     }
-    .services_title_and_description_container{
+
+    .services_title_and_description_container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -91,85 +105,102 @@
         height: auto;
         gap: 20px;
     }
+
     .services_title,
-    .services_description{
-        width:100%;
+    .services_description {
+        width: 100%;
     }
-    .services_title{
+
+    .services_title {
         font-size: 17px;
     }
 }
-.services_main_page_container img{
-    width:100%;
-    height:auto;
+
+.services_main_page_container img {
+    width: 100%;
+    height: auto;
 }
-.service_buttons_container{
-    margin-left: auto;
-    display:grid;
+
+.service_buttons_container {
+
+    display: grid;
+    justify-content: center;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-@media (max-width:768px){
-    .service_buttons_container{
+
+@media (max-width:768px) {
+    .service_buttons_container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         width: 100%;
     }
 }
-.logistics_quote{
+
+.logistics_quote {
     display: flex;
-    width:100%;
+    width: 100%;
     background-color: black;
     color: white;
     flex-direction: column;
-    height:77vh;
+    height: 77vh;
     justify-content: center;
     padding: 200px;
     gap: 50px;
 }
-.logistics_quote_author{
+
+.logistics_quote_author {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.logistics_quote h1{
+
+.logistics_quote h1 {
     font-size: 43px;
 }
-.logistics_quote_author svg{
-    height:20px;
-    width:20px;
+
+.logistics_quote_author svg {
+    height: 20px;
+    width: 20px;
 }
-.quote_arrows_svg{
+
+.quote_arrows_svg {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
-.logistics_quote_author_text{
+
+.logistics_quote_author_text {
     display: flex;
     flex-direction: row;
     gap: 6px;
     font-size: 17px;
     word-spacing: 2px;
 }
-.quote_arrows_svg:hover{
+
+.quote_arrows_svg:hover {
     cursor: pointer;
 }
-@media (max-width:768px){
-    .logistics_quote{
+
+@media (max-width:768px) {
+    .logistics_quote {
         padding: 50px;
         height: auto;
         gap: 30px;
     }
-    .logistics_quote h1{
+
+    .logistics_quote h1 {
         font-size: 28px;
     }
-    .logistics_quote_author{
+
+    .logistics_quote_author {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    .quote_arrows_svg{
+
+    .quote_arrows_svg {
         width: 100%;
         display: flex;
         flex-direction: row;

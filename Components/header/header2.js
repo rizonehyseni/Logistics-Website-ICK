@@ -22,8 +22,7 @@ class HeaderComponent extends HTMLElement {
         <li><a href="../../Pages/about/index.html">About</a></li>
         <li><a href="../../Pages/services/index.html">Services</a></li>
         <li><a href="../../Pages/location/index.html">Location</a></li>
-        <li><a href="../../Pages/customer-care/">Customer Care</a></li>
-
+        <li><a href="../../Pages/customer-care/index.html">Customer Care</a></li>
       </ul>
 
       <div>

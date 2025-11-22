@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* 
 
 header nav {
   padding: 1rem;
@@ -71,7 +72,6 @@ ul li a:hover {
   overflow: hidden;
 }
 
-/*Me mshef navbarin*/
 .nav-hidden {
   transform: translateY(-100%);
 }
@@ -89,4 +89,4 @@ ul li a:hover {
 .navbar-up .login-btn {
   background: #0066ff;
   color: #fff !important;
-}
+} */

@@ -4,48 +4,61 @@ class HeaderComponent extends HTMLElement {
   }
   render() {
     this.innerHTML = `
- <link rel="stylesheet" href="../../Components/header/header2.css">
+    <link rel="stylesheet" href="../../Components/header/header2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <header>
-    <nav id="navbar">
-      <div>
-        <a href="../../Pages/home/index.html"><img src="../../Assets/images/logo.png" width="150px" alt=""></a>
+
+    <nav>
+
+      <div class="logo">
+        <a href="../../Pages/home/index.html">
+          <img src="../../Assets/images/logo.png" width="180px" alt="Logo">
+        </a>
       </div>
 
-
-      <ul class="nav-links">
+      <ul id="menuList" class="menuList">
+        <li><a href="../../Pages/home/index.html">Home</a></li>
         <li><a href="../../Pages/about/index.html">About</a></li>
         <li><a href="../../Pages/services/index.html">Services</a></li>
         <li><a href="../../Pages/location/index.html">Location</a></li>
         <li><a href="../../Pages/customer-care/">Customer Care</a></li>
+
       </ul>
 
-
-      <div class="right-buttons">
+      <div>
         <button class="login-btn"><a href="../../Pages/sign-in-up/login.html">Login</a></button>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
       </div>
     </nav>
   </header>
-
   <script>
-    let lastScroll = 0;
-    const navbar = document.getElementById("navbar");
 
-    window.addEventListener("scroll", () => {
-      const currentScroll = window.pageYOffset;
+    const menuList = document.getElementById("menuList");
 
-      if (currentScroll > lastScroll && currentScroll > 50) {
-        // scrolling down
-        navbar.classList.add("nav-hidden");
+
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "500px";
       } else {
-        // scrolling up
-        navbar.classList.remove("nav-hidden");
+        menuList.style.maxHeight = "0px";
       }
+    }
 
-      lastScroll = currentScroll;
+    // me mshel dropdown masi te prekum naj ;link
+    document.querySelectorAll("#menuList a").forEach(link => {
+      link.addEventListener("click", () => {
+        menuList.style.maxHeight = "0px";
+      });
     });
 
-
+    menuIcon.addEventListener("click", toggleMenu);
   </script>
+
         `
   }
 }

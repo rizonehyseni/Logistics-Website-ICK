@@ -5,84 +5,33 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 
-header nav {
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  width: 100%;
-  overflow: hidden;
-  border-bottom: 1px rgb(78, 78, 78) solid;
+body {
+  overflow-x: hidden;
 }
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links li {
-  list-style: none;
-  text-decoration: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-}
-
-ul li a {
-  transition: 0.2s ease-in;
-}
-
-ul li a:hover {
-  color: rgb(169, 169, 243);
-
-}
-
-.login-btn {
-  background-color: rgb(255, 255, 255);
-  width: 70px;
-  height: 30px;
-  border: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.1s ease;
-  cursor: pointer;
-}
-
-
-.login-btn:active {
-  background-color: rgb(145, 145, 145);
-  color: white;
-}
-
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 20px;
-  transition: transform 0.3s ease;
-  z-index: 10000;
-  backdrop-filter: blur(3px);
-  overflow: hidden;
-}
-
-Me mshef navbarin
-.nav-hidden {
-  transform: translateY(-100%);
-} */
 
 /* section 1 */
 .hero {
   height: 100vh;
   background: url('/Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg') no-repeat center bottom/cover;
   position: relative;
+  transition: all 0.3s ease;
 
 }
+
+
+.hero:hover {
+  box-shadow: inset 0 -350px 200px -110px rgba(0, 0, 0, 0.8);
+
+}
+
+.hero-text {
+  transition: all 0.3s ease;
+}
+
+.hero-text:hover {
+  transform: translateY(-10px);
+}
+
 
 .hero-text {
   position: absolute;
@@ -101,13 +50,18 @@ Me mshef navbarin
 }
 
 .hero-text p {
-  font-size: 1.5rem;
+  font-size: 0.4em;
   font-weight: 400;
+}
+
+.hero-text h4 {
+  font-size: 0.9em;
 }
 
 /* aboutus section */
 .aboutUsContainer {
-  background-color: red;
+  margin-top: 5rem;
+  background-color: green;
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -124,7 +78,6 @@ Me mshef navbarin
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-
 
 }
 
@@ -172,11 +125,6 @@ Me mshef navbarin
 
 
 
-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
 
 .transparent-cards-container {
   width: 100vw;
@@ -245,28 +193,9 @@ video {
   color: white;
 }
 
-
-/* .more-info-container {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 30px;
-  margin-bottom: 5rem;
-
-}
-
-.more-info-card {
- height: 19rem;
-  background-color: rgb(245, 245, 245);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-} */
-
 .more-info-container {
   padding: 20px;
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-bottom: 5rem;
@@ -281,13 +210,32 @@ video {
   justify-content: space-between;
   padding: 30px;
   box-sizing: border-box;
-  /* very important if you keep padding */
+
 }
 
 .more-info-card a {
   text-decoration: none;
 }
 
+.more-info-card:hover {
+  background-color: rgba(175, 175, 175, 0.7);
+}
+
+/* video */
+.ship-video-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 75vh;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+.ship-video-container video {
+  object-fit: cover;
+  width: 95%;
+  height: 100%;
+}
 
 
 
@@ -358,12 +306,181 @@ video {
 
 /* responsive */
 
+@media (max-width: 992px) {
+  .hero-text {
+    font-size: 3rem;
+    width: 600px;
+  }
+
+  .transparent-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    height: 90vh;
+  }
+
+  .service-card {
+    width: 40vh;
+    height: 70%;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.5s all ease;
+  }
+
+
+  .service-card h1 {
+    font-size: 2.4rem;
+  }
+
+  .service-card p {
+    max-width: 250px;
+    font-size: 1rem;
+  }
+
+  .more-info-card {
+    height: 250px;
+  }
+
+
+  .wrapper {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+
+  }
+
+  .counter-container .text {
+    font-size: 14px;
+  }
+
+  .counter-container .num {
+    font-size: 45px;
+  }
+
+  .ship-video-container {
+    width: 100vw;
+    height: 65vh;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2.2rem;
+    width: 400px;
+  }
+
+  .slider-section-container h2 {
+    font-size: 1.4rem;
+    width: 450px;
+  }
+
+  .brand-logo svg {
+    width: 170px;
+  }
+
+  .more-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 30px;
+  }
+
+  .more-info-card {
+    height: 250px;
+    transition: all ease-in 0.2s;
+  }
+
+  .more-info-card p {
+
+    font-size: 16px;
+  }
+
+  .more-info-card a {
+    font-size: 16px;
+  }
+
+  .transparent-cards-container {
+    grid-template-columns: 1fr;
+    height: 155vh;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+
+  }
+
+  .service-card {
+    height: 20rem;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .service-card h1 {
+    font-size: 40px;
+  }
+
+  .service-card p,
+  .service-card a {
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .ship-video-container {
+    width: 100vw;
+    height: 55vh;
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5rem;
+    gap: 80px;
+  }
+
+  .counter-container .text {
+    font-size: 16px;
+  }
+
+  .counter-container .num {
+    font-size: 44px;
+  }
+
+  .counter-container hr {
+    width: 100px;
+  }
+
+
+
+
+
+
+}
+
+
 @media (max-width: 480px) {
   .slider-section-container {
     overflow: hidden;
     padding: 0;
     margin: 0;
 
+  }
+
+  .hero {
+    transition: all 0.3s ease;
+  }
+
+  .hero:hover {
+    box-shadow: inset 0 -550px 600px -110px rgba(0, 0, 0, 0.8);
   }
 
   .slider {
@@ -383,6 +500,13 @@ video {
     width: 130px;
   }
 
+  .ship-video-container {
+    width: 100vw;
+    height: 35vh;
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+
   /* pjesa e get more info about us  */
   .more-info-container {
     grid-template-columns: repeat(2, 1fr);
@@ -392,6 +516,7 @@ video {
 
   .more-info-card {
     height: 210px;
+    transition: all ease-in 0.3s;
   }
 
   .more-info-card p {
@@ -406,7 +531,7 @@ video {
   /* cards */
   .transparent-cards-container {
     grid-template-columns: 1fr;
-    height: 145vh;
+    height: 155vh;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -435,6 +560,7 @@ video {
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     margin: 1.8rem;
+    gap: 20px;
   }
 
   .counter-container .text {

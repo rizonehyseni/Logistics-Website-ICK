@@ -71,7 +71,7 @@
 }
 
 .textAboutWrapper {
-  gap: 3em;
+  gap: 4rem;
   width: 70vw;
   display: flex;
   flex-direction: column;

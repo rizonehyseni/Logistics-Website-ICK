@@ -15,15 +15,15 @@
     <white-header> </white-header>
 
     <section class="cargos">
-            <div class="topSection">
-                <h1 class="title">
-                    We provide logistics solution tailor-made for individual customer!
-                </h1>
-                <p class="titleParagraph">
-                    RKS Logistics provides customized services for customers around the world from 50+ leading
-                    industries.
-                </p>
-            </div>
+        <div class="topSection">
+            <h1 class="title">
+                We provide logistics solution tailor-made for individual customer!
+            </h1>
+            <p class="titleParagraph">
+                RKS Logistics provides customized services for customers around the world from 50+ leading
+                industries.
+            </p>
+        </div>
         <div class="cargoVideo">
             <video src="..\images\crane-picking-container.mp4" alt="cargo video" autoplay loop muted>
             </video>
@@ -204,41 +204,41 @@
             </div>
         </div>
         <div class="articles">
-                <div class="articleBox">
-                    <a href="#">
-                        <img src="..\images\cargo-ship-unloading.jpg" alt="article image" />
-                        <h3>How to Optimize Your Supply Chain Management</h3>
-                        <p>Article - August 28, 2025</p>
-                    </a>
-                </div>
-                <div class="articleBox">
-                    <a href="#">
-                        <img src="..\images\plane-with-company-logo.png" alt="article image" />
-                        <h3>The Future of Logistics: Trends to Watch</h3>
-                        <p>Article - August 15, 2025</p>
-                    </a>
-                </div>
-                <div class="articleBox">
-                    <a href="#">
-                        <img src="..\images\truck-with-company-logo.png" alt="article image" />
-                        <h3>Sustainability in Logistics: Best Practices</h3>
-                        <p>Article - August 1, 2025</p>
-                    </a>
-                </div>
-                <div class="articleBox">
-                    <a href="#">
-                        <img src="..\images\harbor-cargos.png" alt="article image" />
-                        <h3>Leveraging Technology for Efficient Freight Management</h3>
-                        <p>Article - July 20, 2025</p>
-                    </a>
-                </div>
-                <div class="articleBox">
-                    <a href="#">
-                        <img src="..\images\transport-logistics-concept.jpg" alt="article image" />
-                        <h3>Global Trade Challenges and Solutions</h3>
-                        <p>Article - July 5, 2025</p>
-                    </a>
-                </div>
+            <div class="articleBox">
+                <a href="#">
+                    <img src="..\images\cargo-ship-unloading.jpg" alt="article image" />
+                    <h3>How to Optimize Your Supply Chain Management</h3>
+                    <p>Article - August 28, 2025</p>
+                </a>
+            </div>
+            <div class="articleBox">
+                <a href="#">
+                    <img src="..\images\plane-with-company-logo.png" alt="article image" />
+                    <h3>The Future of Logistics: Trends to Watch</h3>
+                    <p>Article - August 15, 2025</p>
+                </a>
+            </div>
+            <div class="articleBox">
+                <a href="#">
+                    <img src="..\images\truck-with-company-logo.png" alt="article image" />
+                    <h3>Sustainability in Logistics: Best Practices</h3>
+                    <p>Article - August 1, 2025</p>
+                </a>
+            </div>
+            <div class="articleBox">
+                <a href="#">
+                    <img src="..\images\harbor-cargos.png" alt="article image" />
+                    <h3>Leveraging Technology for Efficient Freight Management</h3>
+                    <p>Article - July 20, 2025</p>
+                </a>
+            </div>
+            <div class="articleBox">
+                <a href="#">
+                    <img src="..\images\transport-logistics-concept.jpg" alt="article image" />
+                    <h3>Global Trade Challenges and Solutions</h3>
+                    <p>Article - July 5, 2025</p>
+                </a>
+            </div>
         </div>
         <div class="hiddenViewAll">
             <a href="#">View All</a>
@@ -281,13 +281,13 @@
                 <p>How secure is the payment system?</p>
                 <span class="icon">+</span>
             </div>
-            <div class="faqAnswer"> 
+            <div class="faqAnswer">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat.
-                </p> 
+                </p>
             </div>
         </div>
         <div class="faqItem">
@@ -322,6 +322,31 @@
 
     <my-footer> </my-footer>
 </body>
-<script src="index.js"></script>
+<script src="index.js">
+</script>
+<script>
+    const menuList = document.getElementById("menuList");
+
+
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+            menuList.style.maxHeight = "500px";
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+
+    document.querySelectorAll("#menuList a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuList.style.maxHeight = "0px";
+        });
+    });
+
+    menuIcon.addEventListener("click", toggleMenu);
+
+</script>
 
 </html>

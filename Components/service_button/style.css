@@ -5,7 +5,7 @@
     font-family: "Poppins" sans-serif;
 }
 .service_button{
-    height: 50px;
+    min-height: 50px;
     /*width:400px;*/
     display: flex;
     flex-direction: row;

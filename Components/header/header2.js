@@ -61,4 +61,4 @@ class HeaderComponent extends HTMLElement {
         `
   }
 }
-customElements.define('white-header', HeaderComponent) 
+customElements.define('my-navbar', HeaderComponent) 

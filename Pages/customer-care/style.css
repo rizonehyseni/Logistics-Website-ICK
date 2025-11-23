@@ -6,7 +6,6 @@
 }
 
 body {
-
     display: flex;
     flex-direction: column;
     gap: 75px;
@@ -61,7 +60,7 @@ body {
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
-    transform: translateX(-82px) translateY(2px);
+    transform: translateX(-82px) translateY(2.5px);
 }
 
 .contact_lookup_container p {
@@ -128,10 +127,6 @@ body {
 }
 
 @media (max-width:1064px) {
-    body {
-        padding: 20px;
-    }
-
     .customer_care_main_page_container {
         gap: 50px;
     }
@@ -149,7 +144,7 @@ body {
 
     .contact_lookup_container input {
         width: 100%;
-        padding-right: 100px;
+        padding-right: 80px;
     }
 
     .alternative_tracking_container {
@@ -162,8 +157,12 @@ body {
 }
 
 @media (max-width: 580px) {
+    .customer_care_main_page_container {
+        padding: 50px 20px;
+        gap: 40px;
+    }
     .contact_lookup_container button {
-        transform: translateX(-68px) translateY(2.5px);
+        transform: translateX(-70px) translateY(2.5px);
     }
 
     .cc_help_options {
@@ -176,13 +175,13 @@ body {
 
 @media (max-width: 420px) {
     .contact_lookup_container button {
-        transform: translateX(-62px) translateY(2.5px);
+        transform: translateX(-64px) translateY(2.5px);
     }
 }
 
 @media (max-width: 350px) {
     .contact_lookup_container button {
-        transform: translateX(-55px) translateY(2.5px);
+        transform: translateX(-60px) translateY(2.5px);
     }
 }
 
@@ -190,7 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 80vh;
+    height: auto;
     padding: 90px;
 }
 
@@ -209,7 +208,7 @@ body {
 .e_commerce_box,
 .logistics_box {
     width: 50%;
-    height: 55vh;
+    height: 60vh;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 20px;
@@ -220,15 +219,20 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    align-items: center
+    align-content: center;
+}
+.e_commerce_box_title_container svg,
+.logistics_box_title_container svg
+{
+    width: 30px;
+    height: 30px;
 }
 
 .e_commerce_box_content,
 .logistics_box_content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 40%;
+    min-height: 40%;
     border-bottom: 1px solid lightgrey;
 }
 
@@ -242,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 70px;
     /* gap:20px; */
 }
@@ -262,7 +266,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
-    gap: 150px;
+    justify-content: space-between;
 }
 
 info-item:hover {
@@ -272,6 +276,10 @@ info-item:hover {
 }
 
 @media (max-width:768px) {
+    .documents_and_packages_container {
+        padding: 50px 20px;
+        gap: 30px;
+    }
     .documents_and_packages_boxes_container {
         flex-direction: column;
     }
@@ -279,12 +287,16 @@ info-item:hover {
     .e_commerce_box,
     .logistics_box {
         width: 100%;
+        padding: 10px;
     }
 }
 
 @media (max-width:670px) {
+    .logistics_box_content{
+        gap: 10px;
+    }
     .e_commerce_box {
-        height: 78vh;
+        height: 85vh;
     }
 
     .e_commerce_box_info {

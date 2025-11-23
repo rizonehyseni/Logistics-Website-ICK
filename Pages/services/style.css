@@ -6,7 +6,7 @@
 }
 
 .title_and_description_container {
-    min-height: 60vh;
+    min-height: 85vh;
     width: 100%;
     background-color: #0a47c9;
     display: flex;
@@ -57,6 +57,14 @@
 
     .title_container {
         font-size: 20px;
+    }
+}
+@media (max-width:480px) {
+    .title_and_description_container{
+        padding: 30px 15px;
+    }
+    .title_container {
+        font-size: 18px;
     }
 }
 
@@ -113,9 +121,10 @@
     }
 
     .services_title {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
+
 
 .services_main_page_container img {
     width: 100%;
@@ -138,7 +147,12 @@
         width: 100%;
     }
 }
-
+service-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1.5px solid #0a47c9;
+}
 .logistics_quote {
     display: flex;
     width: 100%;

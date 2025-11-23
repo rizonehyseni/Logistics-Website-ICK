@@ -25,5 +25,10 @@
     text-decoration: none;
 }
 .service_button:hover{
-    cursor:pointer
+    cursor:pointer;
+    color: #0a47c9;
+    border-width: 0px;
+}
+.service_button a:hover{
+    color: #0a47c9;
 }

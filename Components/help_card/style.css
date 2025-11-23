@@ -16,6 +16,11 @@
 }
 .help_card_container:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+    .help_card_option{
+        color: #0a47c9;
+    }
 }
 .help_card_option{
     /* width: 300px; */

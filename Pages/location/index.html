@@ -38,18 +38,21 @@
 
 
     <div class="cards-container">
-      <location-card image="../../Assets/images/cargo-ship-carrying-shipping-containers-ocean.jpg"
-        name="RKS Logistics Office" first-list="Choose from over 2000 locations, many open later than The UPS Store, offering packing and domestic and
+      <location-card image="../../Assets/images/warehouse.jpg" name="RKS Logistics Office" first-list="Choose from over 2000 locations, many open later than The UPS Store, offering packing and domestic and
               international shipping services" second-list="Conventiently hold packages for pickup at our locations."
         third-list="Get printing services for posters, presentations and more.">
       </location-card>
 
       <location-card image="../../Assets/images/hero-pic.jpg" name="RKS Logistics Ship Center"
-        first-list="Over 2000 locations worldwide" second-list="Package hold & pickup" third-list="Printing & posters">
+        first-list="Fast domestic and international shipping with easy package drop-off and pickup."
+        second-list="Convenient scheduling and handling for all your shipping needs."
+        third-list="Access additional services like packaging supplies, freight handling, and shipping insurance.">
       </location-card>
 
-      <location-card image="../../Assets/images/hero-pic.jpg" name="RKS Logistics Authorized ShipCenter"
-        first-list="Over 2000 locations worldwide" second-list="Package hold & pickup" third-list="Printing & posters">
+      <location-card image="../../Assets/images/warehouse-outside.jpg" name="RKS Logistics Authorized ShipCenter"
+        first-list="Officially authorized to handle all RKS Logistics shipping services."
+        second-list="Convenient locations for package drop-off, pickup, and secure handling."
+        third-list="Access to additional services such as packaging, document shipping, and tracking support.">
       </location-card>
 
     </div>
@@ -65,10 +68,44 @@
 
 
   <my-footer></my-footer>
+  <script>
+    const menuList = document.getElementById("menuList");
 
 
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "500px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
 
 
+    document.querySelectorAll("#menuList a").forEach(link => {
+      link.addEventListener("click", () => {
+        menuList.style.maxHeight = "0px";
+      });
+    });
+
+    menuIcon.addEventListener("click", toggleMenu);
+
+    // efekti fadeup
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-up').forEach(el => {
+        fadeObserver.observe(el);
+      });
+    });
+  </script>
 
 </body>
 

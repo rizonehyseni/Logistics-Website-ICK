@@ -79,9 +79,97 @@
   cursor: pointer;
 }
 
+.mapsContainer h1 {
+  font-size: 1.5rem;
+}
+
 .input-box .button:active {
   transform: translateY(-50%) scale(0.98);
 }
+
+@media (max-width: 920px) {
+  .blue-container h2 {
+    font-size: 1.3rem;
+    min-width: 300px;
+  }
+
+  .input-box {
+    min-width: 70vw;
+    height: 50px;
+    padding: 0;
+  }
+
+  .input-box i {
+    left: 2px;
+    scale: 0.7;
+    top: 40%;
+  }
+
+  .input-box .button {
+    width: 80px;
+    height: 32px;
+    padding: 0;
+    right: 5px;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+    padding: 0 5rem 0 2.5rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+
+  }
+
+  .mapsContainer {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .blue-container h2 {
+    font-size: 2.4rem;
+    min-width: 300px;
+  }
+
+  .input-box {
+    min-width: 70vw;
+    height: 50px;
+    padding: 0;
+  }
+
+  .input-box i {
+    left: 2px;
+    scale: 0.7;
+    top: 40%;
+  }
+
+  .input-box .button {
+    width: 80px;
+    height: 32px;
+    padding: 0;
+    right: 5px;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+    padding: 0 5rem 0 2.5rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+
+  }
+
+  .mapsContainer {
+    font-size: 0.6rem;
+  }
+
+}
+
 
 @media (max-width: 480px) {
   .blue-container h2 {
@@ -127,43 +215,16 @@
     text-align: center;
   }
 
+  .mapsContainer {
+    font-size: 0.5 rem;
+  }
+
+  .mapsContainer h1 {
+    font-size: 1.3rem;
+  }
 }
 
-/* Responsive */
-/* @media screen and (max-width: 500px) {
-  .input-box {
-    height: 66px;
-    margin: 0 8px;
-  }
 
-  .input-box i {
-    left: 12px;
-    font-size: 25px;
-  }
-
-  .input-box input {
-    padding: 0 112px 0 50px;
-  }
-
-  .input-box .button {
-    right: 12px;
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-} */
-
-
-
-
-/* <section class="blue-container">
-    <div>
-      <h2>Find RKS Logistics locations in Europe</h2>
-      <div class="search-box">
-        <input type="text" class="search-box__input" placeholder="Find location near">
-        <button type="button" class="search-box__btn">Search</button>
-      </div>
-    </div>
-  </section> */
 
 .near-services-section {
   display: flex;
@@ -182,13 +243,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
 .section-header h3 {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 
 
 }
@@ -232,6 +292,3 @@ iframe {
   width: 90vw;
   height: 20rem;
 }
-
-
-@media (max-width: 768px) {}

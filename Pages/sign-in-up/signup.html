@@ -11,7 +11,7 @@
   <script src="../../Components/footer/footer.js"></script>
 </head>
 <body>
-  <white-header></white-header>
+  <my-navbar></my-navbar>
   <div class="container">
     <h1>
       Signup
@@ -83,4 +83,28 @@
   </div>
   <my-footer></my-footer>
 </body>
+<script>
+    const menuList = document.getElementById("menuList");
+
+
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+            menuList.style.maxHeight = "500px";
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+
+    document.querySelectorAll("#menuList a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuList.style.maxHeight = "0px";
+        });
+    });
+
+    menuIcon.addEventListener("click", toggleMenu);
+
+</script>
 </html>

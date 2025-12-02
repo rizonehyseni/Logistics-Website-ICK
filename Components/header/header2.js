@@ -25,11 +25,13 @@ class HeaderComponent extends HTMLElement {
         <li><a href="../../Pages/customer-care/index.html">Customer Care</a></li>
       </ul>
 
-      <div>
-        <button class="login-btn"><a href="../../Pages/sign-in-up/login.html">Login</a></button>
-      </div>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
+      <div class="nav-right">
+        <div>
+          <button class="login-btn"><a href="../../Pages/sign-in-up/login.html">Login</a></button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
       </div>
     </nav>
   </header>

@@ -28,7 +28,7 @@
     cursor:pointer;
     color: #0a47c9;
     border-width: 0px;
-}
-.service_button a:hover{
-    color: #0a47c9;
+    a{
+        color:#0a47c9
+    }
 }

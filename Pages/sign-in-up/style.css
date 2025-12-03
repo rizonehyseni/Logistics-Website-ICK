@@ -8,6 +8,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html{
   font-family: Poppins, Segoe UI, sans-serif;
@@ -20,10 +21,8 @@ body{
   background-image: url(../../Assets/images/company-logo-colored.png);
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 .container{
-  box-sizing: border-box;
   background-color: transparent;
   backdrop-filter: blur(15px);
   height: 100vh;

@@ -71,6 +71,7 @@
 }
 
 .textAboutWrapper {
+  padding-top: 120px;
   gap: 4rem;
   width: 70vw;
   display: flex;
@@ -80,10 +81,6 @@
   font-size: 18px;
 }
 
-.textAboutWrapper hr {
-  width: 20em;
-
-}
 
 .textAboutWrapper h1 {
   font-size: 3em

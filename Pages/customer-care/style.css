@@ -8,10 +8,11 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 70px;
 }
 
 .customer_care_main_page_container {
+    background-color: rgb(233, 233, 233);
     height: auto;
     width: 100%;
     display: flex;

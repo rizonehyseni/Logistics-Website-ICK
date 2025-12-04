@@ -84,11 +84,11 @@ nav ul li a {
 
 
 
-@media(max-width: 795px) {
+@media(max-width: 800px) {
   .menu-icon,
   .menu-icon i {
     display: block;
-    padding: 10px;
+    padding-left: 8px;
     color: black;
     cursor: pointer;
     font-size: 26px;
@@ -105,12 +105,12 @@ nav ul li a {
   nav ul {
     z-index: 10;
     position: absolute;
-    top: 70px;
+    top: 59px;
     left: 0;
     right: 0;
     gap: 2px;
     flex-direction: column;
-    background: rgb(227, 227, 227);
+    background-color: rgb(233, 233, 233);
     overflow: hidden;
     transition: all 0.4s ease;
     text-align: center;

@@ -58,6 +58,11 @@ class HeaderComponent extends HTMLElement {
     });
 
     menuIcon.addEventListener("click", toggleMenu);
+  
+      }
+    });
+  });
+
   </script>
 
         `

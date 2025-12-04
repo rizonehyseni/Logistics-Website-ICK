@@ -7,7 +7,7 @@
 
 
 
-/* section 1 */
+/* section 1 
 .hero {
   transition: all 0.3s ease;
   background-image: url(../../Assets/images/vecteezy_transport-vehicle-and-logistics-concept-3d-render_8084549.JPG);
@@ -16,24 +16,43 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: inset 0 -450px 100px -100px rgba(0, 0, 0, 0.8);*/
+
+/* ------------------- */
+.hero {
+  position: relative;
+  width: 100vw;
+  transition: all 0.3s ease;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -10;
+  display: flex;
+  color: white;
   box-shadow: inset 0 -450px 100px -100px rgba(0, 0, 0, 0.8);
 }
 
 
-.hero-text {
-  transition: all 0.3s ease;
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, rgba(0,0,0.8));
+  z-index: 2;
+}
+
 
 .hero-text:hover {
   transform: translateY(-10px);
 }
 
-
-.hero-text {
-  position: absolute;
-  color: white;
-
-}
 
 .hero-text {
   left: 80px;
@@ -43,6 +62,10 @@
   /* per me ba wrapping */
   font-weight: 600;
   bottom: 30px;
+  transition: all 0.3s ease;
+  z-index: 10; 
+   position: absolute;
+  color: white;
 }
 
 .hero-text p {

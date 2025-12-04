@@ -20,6 +20,9 @@ nav {
   background-color: rgb(233, 233, 233);
   height: 70px;
   position: relative;
+  padding: 0 20px;
+  
+  
 }
 
 nav ul {
@@ -27,8 +30,14 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin-top: 10px;
+  padding: 0;
   align-items: center;
+  
+
 }
+
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -72,6 +81,7 @@ nav ul li a {
   color: black;
 
 }
+
 
 
 @media(max-width: 795px) {

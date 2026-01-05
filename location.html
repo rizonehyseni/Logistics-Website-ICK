@@ -1,116 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <link rel="icon" type="image/png" href="Assets/images/logo-favicon.png" />
+    <script src="Components/header/header2.js"></script>
+    <script src="Components/footer/footer.js"></script>
+    <script src="Components/location-cards/location-cards.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Location</title>
-  <link rel="icon" type="image/png" href="../../Assets/images/logo-favicon.png">
-  <script src="../../Components/header/header2.js"></script>
-  <script src="../../Components/footer/footer.js"></script>
-  <script src="../../Components/location-cards/location-cards.js"></script>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <my-navbar> </my-navbar>
 
-<body>
-  <my-navbar> </my-navbar>
-
-  <section class="location-container">
-    <video autoplay muted loop>
-      <source src="../../Assets/images/cargo-ship-sailing.mp4" type="video/mp4">
-    </video>
-    <div>
-      <h2>Find RKS Logistics locations in Europe</h2>
-      <div class="input-box">
-        <i class="uil uil-search"></i>
-        <input type="text" placeholder="Search locations near" />
-        <button class="button">Search</button>
+    <section class="location-container">
+      <video autoplay muted loop>
+        <source src="Assets/images/cargo-ship-sailing.mp4" type="video/mp4" />
+      </video>
+      <div>
+        <h2>Find RKS Logistics locations in Europe</h2>
+        <div class="input-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search locations near" />
+          <button class="button">Search</button>
+        </div>
       </div>
+    </section>
+
+    <section class="near-services-section">
+      <div class="section-header">
+        <h3>In-store shipping services near you</h3>
+        <p>
+          We are here to help. We would like to remind you all the ways we can
+          help you safely print, pack and ship. Find RKS Logistics services when
+          and where you need them
+        </p>
+      </div>
+
+      <div class="cards-container">
+        <location-card
+          image="Assets/images/warehouse.jpg"
+          name="RKS Logistics Office"
+          first-list="Choose from over 2000 locations, many open later than The UPS Store, offering packing and domestic and
+              international shipping services"
+          second-list="Conventiently hold packages for pickup at our locations."
+          third-list="Get printing services for posters, presentations and more."
+        >
+        </location-card>
+
+        <location-card
+          image="Assets/images/hero-pic.jpg"
+          name="RKS Logistics Ship Center"
+          first-list="Fast domestic and international shipping with easy package drop-off and pickup."
+          second-list="Convenient scheduling and handling for all your shipping needs."
+          third-list="Access additional services like packaging supplies, freight handling, and shipping insurance."
+        >
+        </location-card>
+
+        <location-card
+          image="Assets/images/warehouse-outside.jpg"
+          name="RKS Logistics Authorized ShipCenter"
+          first-list="Officially authorized to handle all RKS Logistics shipping services."
+          second-list="Convenient locations for package drop-off, pickup, and secure handling."
+          third-list="Access to additional services such as packaging, document shipping, and tracking support."
+        >
+        </location-card>
+      </div>
+    </section>
+
+    <div class="mapsContainer">
+      <h1>For more, visit our main Office in Prishtina</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5049.874091496099!2d21.159962442348846!3d42.65927463223588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1763486969270!5m2!1sen!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-  </section>
 
+    <my-footer></my-footer>
+    <script>
+      const menuList = document.getElementById("menuList");
 
+      menuList.style.maxHeight = "0px";
 
-  <section class="near-services-section">
-    <div class="section-header">
-
-      <h3>In-store shipping services near you</h3>
-      <p>We are here to help. We would like to remind you all the ways we can help you safely print, pack and ship. Find
-        RKS Logistics services when and where you need them</p>
-    </div>
-
-
-    <div class="cards-container">
-      <location-card image="../../Assets/images/warehouse.jpg" name="RKS Logistics Office" first-list="Choose from over 2000 locations, many open later than The UPS Store, offering packing and domestic and
-              international shipping services" second-list="Conventiently hold packages for pickup at our locations."
-        third-list="Get printing services for posters, presentations and more.">
-      </location-card>
-
-      <location-card image="../../Assets/images/hero-pic.jpg" name="RKS Logistics Ship Center"
-        first-list="Fast domestic and international shipping with easy package drop-off and pickup."
-        second-list="Convenient scheduling and handling for all your shipping needs."
-        third-list="Access additional services like packaging supplies, freight handling, and shipping insurance.">
-      </location-card>
-
-      <location-card image="../../Assets/images/warehouse-outside.jpg" name="RKS Logistics Authorized ShipCenter"
-        first-list="Officially authorized to handle all RKS Logistics shipping services."
-        second-list="Convenient locations for package drop-off, pickup, and secure handling."
-        third-list="Access to additional services such as packaging, document shipping, and tracking support.">
-      </location-card>
-
-    </div>
-  </section>
-
-  <div class="mapsContainer">
-    <h1>For more, visit our main Office in Prishtina </h1>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5049.874091496099!2d21.159962442348846!3d42.65927463223588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1763486969270!5m2!1sen!2s"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
-
-  <my-footer></my-footer>
-  <script>
-    const menuList = document.getElementById("menuList");
-
-
-    menuList.style.maxHeight = "0px";
-
-    function toggleMenu() {
-      if (menuList.style.maxHeight === "0px") {
-        menuList.style.maxHeight = "500px";
-      } else {
-        menuList.style.maxHeight = "0px";
+      function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+          menuList.style.maxHeight = "500px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
       }
-    }
 
-
-    document.querySelectorAll("#menuList a").forEach(link => {
-      link.addEventListener("click", () => {
-        menuList.style.maxHeight = "0px";
-      });
-    });
-
-    menuIcon.addEventListener("click", toggleMenu);
-
-    // efekti fadeup
-    document.addEventListener('DOMContentLoaded', () => {
-      const fadeObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
+      document.querySelectorAll("#menuList a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuList.style.maxHeight = "0px";
         });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.fade-up').forEach(el => {
-        fadeObserver.observe(el);
       });
-    });
-  </script>
 
-</body>
+      menuIcon.addEventListener("click", toggleMenu);
 
+      // efekti fadeup
+      document.addEventListener("DOMContentLoaded", () => {
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll(".fade-up").forEach((el) => {
+          fadeObserver.observe(el);
+        });
+      });
+    </script>
+  </body>
 </html>

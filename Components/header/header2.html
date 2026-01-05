@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main-Header</title>
+    <link rel="stylesheet" href="../../Components/header/header2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main-Header</title>
-  <link rel="stylesheet" href="../../Components/header/header2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-
-    <nav class="navbar">
-
-      <div class="logo">
-        <a href="../../Pages/home/index.html">
-          <img src="../../Assets/images/logo.png" width="180px" alt="Logo">
-        </a>
-      </div>
-
-      <ul id="menuList" class="menuList">
-        <li><a href="../../Pages/home/index.html">Home</a></li>
-        <li><a href="../../Pages/about/index.html">About</a></li>
-        <li><a href="../../Pages/services/index.html">Services</a></li>
-        <li><a href="../../Pages/location/index.html">Location</a></li>
-        <li><a href="../../Pages/customer-care/index.html">Customer Care</a></li>
-      </ul>
-      
-      <div class="nav-right">
-        <div>
-          <button class="login-btn"><a href="../../Pages/sign-in-up/login.html">Login</a></button>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../../Pages/home/index.html">
+            <img src="../../Assets/images/logo.png" width="180px" alt="Logo" />
+          </a>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
+
+        <ul id="menuList" class="menuList">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../Pages/about/index.html">About</a></li>
+          <li><a href="../../Pages/services/index.html">Services</a></li>
+          <li><a href="../../Pages/location/index.html">Location</a></li>
+          <li>
+            <a href="../../Pages/customer-care/index.html">Customer Care</a>
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <div>
+            <button class="login-btn">
+              <a href="../../Pages/sign-in-up/login.html">Login</a>
+            </button>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
+    <script>
+      const menuList = document.getElementById("menuList");
 
-  <script>
+      menuList.style.maxHeight = "0px";
 
-    const menuList = document.getElementById("menuList");
-
-
-    menuList.style.maxHeight = "0px";
-
-    function toggleMenu() {
-      if (menuList.style.maxHeight === "0px") {
-        menuList.style.maxHeight = "500px";
-      } else {
-        menuList.style.maxHeight = "0px";
+      function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+          menuList.style.maxHeight = "500px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
       }
-    }
 
-    // me mshel dropdown masi te prekum naj ;link
-    document.querySelectorAll("#menuList a").forEach(link => {
-      link.addEventListener("click", () => {
-        menuList.style.maxHeight = "0px";
+      // me mshel dropdown masi te prekum naj ;link
+      document.querySelectorAll("#menuList a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuList.style.maxHeight = "0px";
+        });
       });
-    });
 
-    menuIcon.addEventListener("click", toggleMenu);
-  </script>
-
-</body>
-
+      menuIcon.addEventListener("click", toggleMenu);
+    </script>
+  </body>
 </html>
